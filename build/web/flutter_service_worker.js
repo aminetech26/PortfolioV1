@@ -12,6 +12,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "ab9ccf130dadea5212e3c5d2ad1e4fe6
 "assets/assets/meqapp.jpg": "92d3b0886e4620624f7b6d5b8ce859ae",
 "assets/assets/my_photo.jpg": "6bfcae9e7cdd6ba7f9731325b2bcc56c",
 "assets/assets/portfolio.jpg": "fb1a96686387f61b173e61f2e60b743f",
+"assets/assets/second_photo.JPG": "fc7785b7e86b54e7373a8c579333191b",
 "assets/assets/splash_screen.json": "6fe39b961cd2540eb3e44974b7741eb6",
 "assets/assets/third_image.png": "37c10160ec21e8aa7159b78844494d67",
 "assets/assets/todoapp.jpg": "81b29c5acb080ec9ecf52202d672ffa1",
@@ -33,9 +34,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "ab9ccf130dadea5212e3c5d2ad1e4fe6
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "c3d4c64a42d9301ef02dd27f44593da1",
-"/": "c3d4c64a42d9301ef02dd27f44593da1",
-"main.dart.js": "7fe9e64f6252145f9dc88e2e39e23c5c",
+"index.html": "96677c102ac16e186d10c50d36b757f5",
+"/": "96677c102ac16e186d10c50d36b757f5",
+"main.dart.js": "9039ba13034d44621cf6d36ef459dd79",
 "manifest.json": "f84e16cd6fb48750c29a0916e106ec23",
 "version.json": "009c9e65172e010890f7f65fde438006"};
 // The application shell files that are downloaded before a service worker can

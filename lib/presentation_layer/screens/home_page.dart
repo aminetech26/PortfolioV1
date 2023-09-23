@@ -258,7 +258,7 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         CircleAvatar(maxRadius: 20.r,
-                          backgroundImage: const NetworkImage(
+                          backgroundImage: const AssetImage(
                               Strings.thirdProfilePicture),),
                         const Text(
                           r'   </Ahmed Amine GUERRAICHE>', style: TextStyle(
@@ -314,7 +314,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircleAvatar(maxRadius: 20.r,
-                    backgroundImage: const NetworkImage(
+                    backgroundImage: const AssetImage(
                         Strings.thirdProfilePicture),),
                   Text(
                     r'    </Ahmed Amine GUERRAICHE>', style: TextStyle(
@@ -416,7 +416,7 @@ class _HomePageState extends State<HomePage> {
                         Padding(
                           padding: EdgeInsets.only(left: 80.w,bottom: 10.h),
                           child: CircleAvatar(maxRadius: 50.r,
-                            backgroundImage: NetworkImage(
+                            backgroundImage: AssetImage(
                                 Strings.profilePicture),),
                         ),SizedBox(width: size.width/20,),
                         Padding(
@@ -492,7 +492,7 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         CircleAvatar(maxRadius: 20.r,
-                          backgroundImage: const NetworkImage(
+                          backgroundImage: const AssetImage(
                               Strings.thirdProfilePicture),),
                         const Text(
                           r'   </Ahmed Amine GUERRAICHE>', style: TextStyle(
@@ -548,7 +548,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircleAvatar(maxRadius: 20.r,
-                    backgroundImage: const NetworkImage(
+                    backgroundImage: const AssetImage(
                         Strings.thirdProfilePicture),),
                    Text(
                     r'    </Ahmed Amine GUERRAICHE>', style: TextStyle(
@@ -648,7 +648,7 @@ class _HomePageState extends State<HomePage> {
                         Padding(
                           padding: EdgeInsets.only(left: 130.w,bottom: 20.h),
                           child: CircleAvatar(maxRadius: 50.r,
-                            backgroundImage: NetworkImage(
+                            backgroundImage: AssetImage(
                                 Strings.profilePicture),),
                         ),
                     Padding(
