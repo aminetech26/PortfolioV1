@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
                     Row(
                       children: [
                         CircleAvatar(maxRadius: 20.r,
-                          backgroundImage: const NetworkImage(
+                          backgroundImage: const AssetImage(
                               Strings.thirdProfilePicture),),
                         const Text(
                           r'   </Ahmed Amine GUERRAICHE>', style: TextStyle(
@@ -187,8 +187,7 @@ class _HomePageState extends State<HomePage> {
                             )),
                         SizedBox(width: size.width / 5,),
                         CircleAvatar(maxRadius: 120.r,
-                          backgroundImage: NetworkImage(
-                              Strings.profilePicture),),
+                          backgroundImage: AssetImage(Strings.profilePicture),),
 
 
                       ],

@@ -205,7 +205,7 @@ class _MyProjectsState extends State<MyProjects> {
                 height: size.height/2,
                 width: size.width/4,
                 child: ClipRRect(
-                  child: Image(image: NetworkImage(project.url),fit: BoxFit.fill,),
+                  child: Image(image: AssetImage(project.url),fit: BoxFit.fill,),
                 ),
               )
             ],
@@ -228,7 +228,7 @@ class _MyProjectsState extends State<MyProjects> {
             height: size.height/4,
             width: size.width/2,
             child: ClipRRect(
-              child: Image(image: NetworkImage(project.url),fit: BoxFit.fill,),
+              child: Image(image: AssetImage(project.url),fit: BoxFit.fill,),
             ),
           ),
           SizedBox(height: size.height/20,),
@@ -279,7 +279,7 @@ class _MyProjectsState extends State<MyProjects> {
             height: size.height/3.5,
             width: size.width/3,
             child: ClipRRect(
-              child: Image(image: NetworkImage(project.url),fit: BoxFit.fill,),
+              child: Image(image: AssetImage(project.url),fit: BoxFit.fill,),
             ),
           ),
           SizedBox(height: size.height/20,),

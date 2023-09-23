@@ -35,7 +35,7 @@ class ContactPage extends StatelessWidget {
                       ),
                       CircleAvatar(
                         maxRadius: 40.r,
-                        backgroundImage: NetworkImage(Strings.profilePicture),
+                        backgroundImage: AssetImage(Strings.profilePicture),
                       ),
                       Row(
                         children: [

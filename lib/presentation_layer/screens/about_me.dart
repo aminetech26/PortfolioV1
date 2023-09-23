@@ -19,7 +19,7 @@ class AboutMe extends StatelessWidget {
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
-      CircleAvatar(maxRadius: 100.r,backgroundImage: NetworkImage(Strings.secondProfilePicture),),
+      CircleAvatar(maxRadius: 100.r,backgroundImage: AssetImage(Strings.secondProfilePicture),),
       SizedBox(width: size.width/10,),
       Column(
         mainAxisSize: MainAxisSize.min,
