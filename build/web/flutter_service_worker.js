@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "414f2186ab72ec21bc0cc7819c64b79c",
-"assets/AssetManifest.json": "e8839423fe072e099023786c2453f5d6",
+const RESOURCES = {"assets/AssetManifest.bin": "ab9ccf130dadea5212e3c5d2ad1e4fe6",
+"assets/AssetManifest.json": "8bac07726ef2557e2b4a8ebf6aea5586",
 "assets/assets/Accomplish.png": "509c10935b0549d0baaba9286217f289",
 "assets/assets/archimind.jpg": "03f3a210ddb4d224db2afc5318a58bba",
 "assets/assets/facebook.png": "47613a756d0417bfb4d85a45d499908b",
@@ -12,7 +12,6 @@ const RESOURCES = {"assets/AssetManifest.bin": "414f2186ab72ec21bc0cc7819c64b79c
 "assets/assets/meqapp.jpg": "92d3b0886e4620624f7b6d5b8ce859ae",
 "assets/assets/my_photo.jpg": "6bfcae9e7cdd6ba7f9731325b2bcc56c",
 "assets/assets/portfolio.jpg": "fb1a96686387f61b173e61f2e60b743f",
-"assets/assets/second_photo.jpg": "fc7785b7e86b54e7373a8c579333191b",
 "assets/assets/splash_screen.json": "6fe39b961cd2540eb3e44974b7741eb6",
 "assets/assets/third_image.png": "37c10160ec21e8aa7159b78844494d67",
 "assets/assets/todoapp.jpg": "81b29c5acb080ec9ecf52202d672ffa1",
@@ -34,9 +33,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "414f2186ab72ec21bc0cc7819c64b79c
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "0bd19c1e7758b40b317f16ada8ff875b",
-"/": "0bd19c1e7758b40b317f16ada8ff875b",
-"main.dart.js": "5f5d8c589314d2b07197d4a29127a034",
+"index.html": "c3d4c64a42d9301ef02dd27f44593da1",
+"/": "c3d4c64a42d9301ef02dd27f44593da1",
+"main.dart.js": "7fe9e64f6252145f9dc88e2e39e23c5c",
 "manifest.json": "f84e16cd6fb48750c29a0916e106ec23",
 "version.json": "009c9e65172e010890f7f65fde438006"};
 // The application shell files that are downloaded before a service worker can

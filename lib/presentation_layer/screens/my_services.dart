@@ -36,7 +36,7 @@ class _MyServicesState extends State<MyServices> {
             ],
           );
         }
-        else if (constraints.maxWidth>390 || constraints.maxWidth<=900){
+        else if (constraints.maxWidth> 428 && constraints.maxWidth<=900){
           return Padding(
             padding: EdgeInsets.only(left: 90.w),
             child: Column(

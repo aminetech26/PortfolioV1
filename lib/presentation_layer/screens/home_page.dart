@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: AppColors.bgColor,
       body: LayoutBuilder(builder: (context,constraints) {
-        if (constraints.maxWidth>900){
+        if (constraints.maxWidth > 900){
         return SingleChildScrollView(
           controller: controller,
           // padding: EdgeInsets.only(
@@ -180,7 +180,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Container(
                             height: size.height / 3,
-                            width: size.width / 2.9,
+                            width: size.width / 3,
                             child: Text(
                               'I\'m a 3rd-year student at the Higher National School of Computer Science, deeply committed to producing reliable software with meticulous code craftsmanship. As a cross-platform mobile developer with a keen eye for UI/UX design, I merge my expertise with a foundation in Desktop App development, offering a comprehensive approach to software artistry. I enjoy turning code into digital masterpieces.',
                               style: TextStyles.normalText(),
@@ -188,8 +188,6 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(width: size.width / 5,),
                         CircleAvatar(maxRadius: 120.r,
                           backgroundImage: AssetImage(Strings.profilePicture),),
-
-
                       ],
                     ),
                     Row(
@@ -247,7 +245,7 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         );}
-        else if(constraints.maxWidth > 390 || constraints.maxWidth <= 900){
+        else if(constraints.maxWidth > 428 && constraints.maxWidth <= 900){
           return Scaffold(
             backgroundColor: Colors.grey[50],
             drawer: Drawer(

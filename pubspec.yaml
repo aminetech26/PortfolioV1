@@ -70,7 +70,7 @@ flutter:
   assets:
     - assets/facebook.png
     - assets/my_photo.jpg
-    - assets/second_photo.jpg
+    - assets/second_photo.JPG
     - assets/third_image.png
     - assets/archimind.jpg
     - assets/Accomplish.png

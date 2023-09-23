@@ -26,7 +26,7 @@ class FooterPage extends StatelessWidget {
             ),
           );
         }
-        else if (constraints.maxWidth>390 || constraints.maxWidth <= 900){
+        else if (constraints.maxWidth > 428 && constraints.maxWidth <= 900){
           return Container(
             width: double.infinity,
             height: 70.h,

@@ -19,7 +19,7 @@ class AboutMe extends StatelessWidget {
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
-      CircleAvatar(maxRadius: 100.r,backgroundImage: AssetImage(Strings.secondProfilePicture),),
+      CircleAvatar(maxRadius: 100.r,backgroundImage: const AssetImage(Strings.secondProfilePicture),),
       SizedBox(width: size.width/10,),
       Column(
         mainAxisSize: MainAxisSize.min,
@@ -86,7 +86,7 @@ class AboutMe extends StatelessWidget {
     ],
   );
 }
-    else if(constrainsts.maxWidth > 390 || constrainsts.maxWidth <= 900){
+    else if(constrainsts.maxWidth > 428 && constrainsts.maxWidth <= 900){
       return Padding(
         padding: EdgeInsets.only(left: 50.w),
         child: Column(

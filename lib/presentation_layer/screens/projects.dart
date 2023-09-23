@@ -78,7 +78,7 @@ class _MyProjectsState extends State<MyProjects> {
                   ])
           );
         }
-        else if(constraints.maxWidth>390 || constraints.maxWidth <= 900){
+        else if(constraints.maxWidth> 428 && constraints.maxWidth <= 900){
           return Column(
               children: [
                 Text('My Projects',style: GoogleFonts.rubikMoonrocks(
