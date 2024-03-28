@@ -17,7 +17,10 @@ class MyProjects extends StatefulWidget {
 
 class _MyProjectsState extends State<MyProjects> {
   CarouselController buttonCarouselController = CarouselController();
-  List<Project> mobileAppsProjects = [Project(title: 'ArchiMind', category: 'Desktop App', description: 'ArchiMind is an immersive tool for CS students to simulate 8086 assembly language execution while supporting step-by-step simulation. It also features quizzes and documentation.', repo_url: 'https://archimind.netlify.app/', url: Strings.archiMind),
+  List<Project> mobileAppsProjects = [
+    Project(title: 'Panier Promo', category: 'Mobile App', description: 'Panier Promo revolutionizes your way of consuming by providing you with exclusive access to the best current offers. An intuitive application, available on Android and iOS, allows you to discover tempting promotions to optimize shopping experience', repo_url: 'https://panierpromo.fr/', url: Strings.panierPromo),
+
+    Project(title: 'ArchiMind', category: 'Desktop App', description: 'ArchiMind is an immersive tool for CS students to simulate 8086 assembly language execution while supporting step-by-step simulation. It also features quizzes and documentation.', repo_url: 'https://archimind.netlify.app/', url: Strings.archiMind),
     Project(title: 'Accomplish', category: 'Desktop App', description: 'Accomplish is a dekstop planner that simplifies organization, enabling seamless planning, prioritization, and tracking of daily, weekly, and monthly activities.', repo_url: 'https://github.com/aminetech26/Accomplish', url: Strings.accomplish),
   Project(title: 'Instagram UI Clone', category: 'Mobile App', description: 'The "Instagram UI Clone" app replicates the user interface of Instagram, offering a near-identical visual experience to the popular social media platform.', repo_url: 'https://github.com/aminetech26/InstagramUIClone', url: Strings.instagramClone),
   Project(title: 'Madrasati Quraniyah', category: 'Mobile App', description: 'This application is built in order to help Quran teachers in reporting the presence and absence of students as well as to keep their informations.', repo_url: 'https://github.com/aminetech26/StudentManagementSystem', url: Strings.meqApp),

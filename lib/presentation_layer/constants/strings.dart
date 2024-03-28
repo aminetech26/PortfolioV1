@@ -10,6 +10,7 @@ class Strings {
   static const meqApp = 'assets/meqapp.jpg';
   static const todoApp = 'assets/todoapp.jpg';
   static const portfolio = 'assets/portfolio.jpg';
+  static const panierPromo = 'assets/panier-promo.png';
 
 
 
