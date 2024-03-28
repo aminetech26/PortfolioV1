@@ -17,7 +17,7 @@ class FooterPage extends StatelessWidget {
             color: Colors.grey[50],
             child: Center(
               child: Text(
-                'Copyright © 2023, All rights reserved. Made with \u2764 by </Ahmed Amine GUERRAICHE>',
+                'Copyright © 2024, All rights reserved. Made with \u2764 by </Ahmed Amine GUERRAICHE>',
                 style: TextStyle(
                   fontSize: 4.sp,
                   fontWeight: FontWeight.w600,
