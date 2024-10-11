@@ -12,4 +12,6 @@ class Strings {
   static const panierPromo = 'assets/panier_promo.png';
   static const CSEOrganisersApp = 'assets/CSE_Logo.png';
   static const truthFinder = 'assets/truth_finder.jpg';
+  static const flowAI = 'assets/FlowAI.png';
+  static const zst = 'assets/zst.png';
 }

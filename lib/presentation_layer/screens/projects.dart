@@ -1,13 +1,12 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide CarouselController;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'dart:html' as html;
-
 import '../../data_layer/project.dart';
-import '../constants/colors.dart';
 import '../constants/strings.dart';
 import '../constants/text_styles.dart';
+import 'dart:html' as html;
+import 'package:carousel_slider/carousel_controller.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class MyProjects extends StatefulWidget {
   const MyProjects({Key? key}) : super(key: key);
@@ -17,13 +16,29 @@ class MyProjects extends StatefulWidget {
 }
 
 class _MyProjectsState extends State<MyProjects> {
-  CarouselController buttonCarouselController = CarouselController();
+  CarouselSliderController buttonCarouselController =
+      CarouselSliderController();
   List<Project> mobileAppsProjects = [
+    Project(
+        title: 'ZST Ecommerce',
+        category: 'Mobile App',
+        description:
+            'Contributed to the development of a multi-vendor e-commerce platform by building the mobile application using Flutter, integrated with an Odoo-based backend. Worked within a team of four to deliver a user-friendly, cross-platform app for both iOS and Android. Worked on key features including: product listing, feed scrolling with short video reels for product showcasing, a review and rating system, and a user profile management section.',
+        repo_url:
+            'https://play.google.com/store/apps/details?id=com.zst.app.mobile',
+        url: Strings.zst),
+    Project(
+        title: 'Flow AI',
+        category: 'Web App',
+        description:
+            'a web application to automate the creation of workflows from operational procedure documents in PDF format using AI and OCR technology. The system integrated large language models (LLMs) and OCR to streamline document processing, reducing the time required for manual workflow creation from weeks to hours. This solution enabled real-time validation and configuration of GED (Electronic Document Management) solutions for clients, significantly increasing operational efficiency and minimizing the need for multiple iterations.',
+        repo_url: '',
+        url: Strings.flowAI),
     Project(
         title: 'Truth Finder',
         category: 'Web App',
         description:
-            'TruthFinder is a scientific article search engine developed by a team of six people as part of the IGL module. My primary role in this project was to design and implement the scraping process. This phase involved extracting important elements such as abstracts, authors, keywords, and references from the articles uploaded by the administrator to index this information using ElasticSearch, thus allowing users to efficiently search for articles in the database. For this, I used tools such as GROBID and regular expressions. Additionally, I worked on deploying the solution using Docker to ensure its portability and ease of production deployment.',
+            'TruthFinder is a scientific article search engine developed by a team of six people as part of the IGL module. My primary role in this project was to design and implement the scraping process.For this, I used tools such as GROBID and regular expressions. Additionally, I worked on deploying the solution using Docker to ensure its portability and ease of production deployment.',
         repo_url: 'https://github.com/khaledbenmachiche/ScholarFinder-Backend',
         url: Strings.truthFinder),
     Project(
@@ -84,7 +99,6 @@ class _MyProjectsState extends State<MyProjects> {
         repo_url: '',
         url: Strings.portfolio)
   ];
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -92,7 +106,7 @@ class _MyProjectsState extends State<MyProjects> {
       if (constraints.maxWidth > 900) {
         return Container(
             width: size.width,
-            decoration: BoxDecoration(),
+            decoration: const BoxDecoration(),
             child: Column(children: [
               Text(
                 'My Projects',
@@ -115,16 +129,16 @@ class _MyProjectsState extends State<MyProjects> {
                             duration: const Duration(seconds: 1),
                             curve: Curves.linear,
                           ),
-                          child: Icon(Icons.navigate_before),
+                          child: const Icon(Icons.navigate_before),
                         ),
                         buildProjectWidget(
                             project), // Pass the individual project to your buildProjectWidget function
                         MaterialButton(
                           onPressed: () => buttonCarouselController.nextPage(
-                            duration: Duration(seconds: 1),
+                            duration: const Duration(seconds: 1),
                             curve: Curves.linear,
                           ),
-                          child: Icon(Icons.navigate_next),
+                          child: const Icon(Icons.navigate_next),
                         ),
                       ],
                     ),
@@ -156,7 +170,6 @@ class _MyProjectsState extends State<MyProjects> {
           ),
           CarouselSlider(
             items: mobileAppsProjects.asMap().entries.map((entry) {
-              final int index = entry.key;
               final Project project = entry.value;
               return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 0.0),
@@ -216,7 +229,7 @@ class _MyProjectsState extends State<MyProjects> {
     Size size = MediaQuery.of(context).size;
     return Container(
       color: Colors.grey[200],
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -229,18 +242,18 @@ class _MyProjectsState extends State<MyProjects> {
               children: [
                 Row(
                   children: [
-                    Text(
+                    const Text(
                       'Project name : ',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text('${project.title}')
+                    Text(project.title)
                   ],
                 ),
                 Row(
                   children: [
-                    Text(
+                    const Text(
                       'Category : ',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -255,7 +268,7 @@ class _MyProjectsState extends State<MyProjects> {
                       child: RichText(
                           text: TextSpan(
                         children: [
-                          TextSpan(
+                          const TextSpan(
                               text: 'Description : ',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -276,6 +289,7 @@ class _MyProjectsState extends State<MyProjects> {
                     onPressed: () {
                       html.window.open(project.repo_url, 'Social Media');
                     },
+                    color: Colors.lightBlueAccent,
                     child: Text(
                       'See Project',
                       style: TextStyle(
@@ -283,15 +297,14 @@ class _MyProjectsState extends State<MyProjects> {
                         fontWeight: FontWeight.bold,
                         fontSize: 3.sp,
                       ),
-                    ),
-                    color: Colors.lightBlueAccent),
+                    )),
               ],
             ),
           ),
           SizedBox(
             width: size.width / 20,
           ),
-          Container(
+          SizedBox(
             height: size.height / 2,
             width: size.width / 4,
             child: Image.asset(project.url),
@@ -312,7 +325,7 @@ class _MyProjectsState extends State<MyProjects> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
+          SizedBox(
               height: size.height / 4,
               width: size.width / 2,
               child: Image.asset(project.url)),
@@ -325,21 +338,21 @@ class _MyProjectsState extends State<MyProjects> {
             children: [
               RichText(
                   text: TextSpan(children: [
-                TextSpan(
+                const TextSpan(
                     text: 'Project title : ',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                     )),
-                TextSpan(text: '${project.title}'),
+                TextSpan(text: project.title),
               ])),
               RichText(
                   text: TextSpan(children: [
-                TextSpan(
+                const TextSpan(
                     text: 'Project category : ',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                     )),
-                TextSpan(text: '${project.category}'),
+                TextSpan(text: project.category),
               ])),
             ],
           ),
@@ -351,6 +364,7 @@ class _MyProjectsState extends State<MyProjects> {
               onPressed: () {
                 html.window.open(project.repo_url, 'Social Media');
               },
+              color: Colors.lightBlueAccent,
               child: Text(
                 'See Project',
                 style: TextStyle(
@@ -358,8 +372,7 @@ class _MyProjectsState extends State<MyProjects> {
                   fontWeight: FontWeight.bold,
                   fontSize: 10.sp,
                 ),
-              ),
-              color: Colors.lightBlueAccent),
+              )),
         ],
       ),
     );
@@ -376,7 +389,7 @@ class _MyProjectsState extends State<MyProjects> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
+          SizedBox(
               height: size.height / 3.5,
               width: size.width / 3,
               child: Image.asset(project.url)),
@@ -389,21 +402,21 @@ class _MyProjectsState extends State<MyProjects> {
             children: [
               RichText(
                   text: TextSpan(children: [
-                TextSpan(
+                const TextSpan(
                     text: 'Project title : ',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                     )),
-                TextSpan(text: '${project.title}'),
+                TextSpan(text: project.title),
               ])),
               RichText(
                   text: TextSpan(children: [
-                TextSpan(
+                const TextSpan(
                     text: 'Project category : ',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                     )),
-                TextSpan(text: '${project.category}'),
+                TextSpan(text: project.category),
               ])),
             ],
           ),

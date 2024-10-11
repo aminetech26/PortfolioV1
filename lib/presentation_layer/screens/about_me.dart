@@ -39,7 +39,7 @@ class AboutMe extends StatelessWidget {
                   height: size.height / 50,
                 ),
                 Text(
-                  'Software Developer !',
+                  'Software Engineer !',
                   style: TextStyles.montserratTextStyle(),
                 ),
                 SizedBox(

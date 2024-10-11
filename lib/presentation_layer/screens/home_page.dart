@@ -40,12 +40,14 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 120),
+                  padding: const EdgeInsets.symmetric(horizontal: 120),
                   height: 60.h,
                   width: double.infinity,
                   child: Row(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           CircleAvatar(
                             maxRadius: 20.r,
@@ -134,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                 ),
-                Divider(),
+                const Divider(),
                 Padding(
                   padding: EdgeInsets.only(left: size.width * 0.1, top: 5),
                   child: Column(
@@ -161,10 +163,7 @@ class _HomePageState extends State<HomePage> {
                               TyperAnimatedText('CS Student at ESI Algiers',
                                   textStyle:
                                       TextStyles.customMontserratTextStyle()),
-                              TyperAnimatedText('UX/UI Designer',
-                                  textStyle:
-                                      TextStyles.customMontserratTextStyle()),
-                              TyperAnimatedText('Mobile Apps Developer',
+                              TyperAnimatedText('Software Engineer',
                                   textStyle:
                                       TextStyles.customMontserratTextStyle()),
                             ],
@@ -176,11 +175,11 @@ class _HomePageState extends State<HomePage> {
                       ),
                       Row(
                         children: [
-                          Container(
-                              height: size.height / 3,
+                          SizedBox(
+                              height: size.height / 4,
                               width: size.width / 3,
                               child: Text(
-                                'I\'m a 3rd-year student at the Higher National School of Computer Science, deeply committed to producing reliable software with meticulous code craftsmanship. As a cross-platform mobile developer with a keen eye for UI/UX design, I merge my expertise with a foundation in Desktop App development, offering a comprehensive approach to software artistry. I enjoy turning code into digital masterpieces.',
+                                'Fourth-year engineering student specializing in Computer Systems and Software (SIL), with expertise in mobile and backend development. Focused on delivering scalable, user-centric solutions that ensure performance, reliability, and real-world impact.',
                                 style: TextStyles.normalText(),
                               )),
                           SizedBox(
@@ -188,7 +187,8 @@ class _HomePageState extends State<HomePage> {
                           ),
                           CircleAvatar(
                             maxRadius: 120.r,
-                            backgroundImage: AssetImage(Strings.profilePicture),
+                            backgroundImage:
+                                const AssetImage(Strings.profilePicture),
                           ),
                         ],
                       ),
@@ -227,7 +227,7 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.lightBlueAccent[100],
                           onPressed: () {
                             html.window.open(
-                                'https://drive.google.com/file/d/11I3DQRsP3uu4VLVDmwNwfmIP9RB1_UNM/view?usp=sharing',
+                                'https://drive.google.com/file/d/1HeT_SbwGtmGCG9yI2TEQhVefKVQkOw6h/view?usp=sharing',
                                 'Curriculum Vitae');
                           },
                           child: Text(
